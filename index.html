@@ -1,62 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Digital - Seguidores e Sites</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ====== RESET ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ====== CABEÇALHO ====== */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        /* ====== SEÇÃO DE SERVIÇOS ====== */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card a {
+            display: inline-block;
+            background: #2575fc;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .service-card a:hover {
+            background: #6a11cb;
+        }
+
+        /* ====== RODAPÉ ====== */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>🚀 Loja Digital</h1>
-    <p>Seguidores, curtidas, visualizações, inscritos e criação de sites profissionais</p>
-  </header>
-  
-  <nav>
-    <a href="#instagram">Instagram</a>
-    <a href="#tiktok">TikTok</a>
-    <a href="#youtube">YouTube</a>
-    <a href="#sites">Sites</a>
-    <a href="https://wa.me/5581996744143" target="_blank">WhatsApp</a>
-    <a href="https://instagram.com/_vitorkr" target="_blank">Instagram</a>
-  </nav>
 
-  <div class="container">
-    <div class="card" id="instagram">
-      <h2>Seguidores Instagram</h2>
-      <p class="price">100 até 10.000 seguidores</p>
-      <a class="btn" href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
-    </div>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Loja Digital</h1>
+        <p>Serviços de seguidores, curtidas e sites profissionais</p>
+    </header>
 
-    <div class="card" id="tiktok">
-      <h2>Seguidores TikTok</h2>
-      <p class="price">100 até 10.000 seguidores</p>
-      <a class="btn" href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
-    </div>
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section class="services">
 
-    <div class="card">
-      <h2>Curtidas & Visualizações</h2>
-      <p class="price">Pacotes personalizados</p>
-      <a class="btn" href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
-    </div>
+        <div class="service-card">
+            <img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="Instagram">
+            <h2>Seguidores Instagram</h2>
+            <p>De 100 a 10.000 seguidores reais.</p>
+            <a href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
+        </div>
 
-    <div class="card" id="youtube">
-      <h2>Inscritos YouTube</h2>
-      <p class="price">100 até 10.000 inscritos</p>
-      <a class="btn" href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
-    </div>
+        <div class="service-card">
+            <img src="https://img.icons8.com/color/96/000000/tiktok--v1.png" alt="TikTok">
+            <h2>Seguidores TikTok</h2>
+            <p>De 100 a 10.000 seguidores reais.</p>
+            <a href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
+        </div>
 
-    <div class="card" id="sites">
-      <h2>Sites Profissionais</h2>
-      <p class="price">Apenas R$300</p>
-      <a class="btn" href="https://wa.me/5581996744143" target="_blank">Solicitar Site</a>
-    </div>
-  </div>
+        <div class="service-card">
+            <img src="https://img.icons8.com/color/96/000000/thumb-up.png" alt="Curtidas">
+            <h2>Curtidas</h2>
+            <p>De 100 a 10.000 curtidas em suas publicações.</p>
+            <a href="https://wa.me/5581996744143" target="_blank">Comprar Agora</a>
+        </div>
 
-  <footer>
-    <p>© 2025 Loja Digital. Todos os direitos reservados.</p>
-    <p>Contato: <a href="https://wa.me/5581996744143" target="_blank">WhatsApp</a> | <a href="https://instagram.com/_vitorkr" target="_blank">Instagram</a></p>
-  </footer>
+        <div class="service-card">
+            <img src="https://img.icons8.com/color/96/000000/domain.png" alt="Sites">
+            <h2>Sites Profissionais</h2>
+            <p>Criação de sites completos a partir de R$300.</p>
+            <a href="https://wa.me/5581996744143" target="_blank">Contratar Agora</a>
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        &copy; 2025 Loja Digital – Site criado pela nossa empresa. Todos os direitos reservados.
+    </footer>
+
 </body>
 </html>
